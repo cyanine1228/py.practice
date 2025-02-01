@@ -1,3 +1,5 @@
-i = 0b1111
-i |= (1 << 0)
-print(bin(i))
+def gcd(a, b):
+    if a % b == 0:
+        return b
+    return gcd(b, a % b)
+print(gcd(35, 14))
